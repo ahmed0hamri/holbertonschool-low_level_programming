@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /** 
  *This is a multiline comment
- *description: execute a block of code based on the value of the given expression
+ *description: execute a block of code based 
+ *on the value of the given expression
  *Return - 0 Successful
  */
 int main(void)
@@ -16,17 +16,15 @@ int main(void)
 	
 	 if (n > 0)
 	 {	 
-		printf("%d is positive\n",n);
+		printf("%d is positive\n", n);
 	 }
 	 if (n < 0)
 	 { 
-	      printf("%d is negative\n",n);
+	      printf("%d is negative\n", n);
 	 }
 	 if (n == 0)
 	 { 
-		printf("%d is zero\n",n);
+		printf("%d is zero\n", n);
 	 }
-
-	return 0;
-	
+	return (0);
 }
