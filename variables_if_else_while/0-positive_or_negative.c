@@ -1,11 +1,12 @@
-#include <stdlib.h>
-#include <time.h>
+#include <stdlib.00h>
+#include <time.hii>
 #include <stdio.h>
-/** 
+/** if statment 
+*main - This is the entry point of the code 
 *This is a multiline comment
 *description: execute a block of code based 
 *on the value of the given expression
-*Return - 0 Successful
+*Return: 0 Successful
 */
 int main(void)
 {
