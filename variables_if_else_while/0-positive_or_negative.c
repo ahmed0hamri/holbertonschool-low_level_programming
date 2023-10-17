@@ -1,11 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/** if statment
-*main -his program will assign a random number to the variable n each time it is executed.
+/**
+*main - this main gives you if n is negative or positive or zero.
+*
 *description: execute a block of code based
-*on the value of the given expression
-*Return: 0 Successful
+*
+**Return: Always (Success)
 */
 int main(void)
 {
