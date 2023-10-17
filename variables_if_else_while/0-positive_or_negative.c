@@ -1,5 +1,5 @@
-#include <stdlib.00h>
-#include <time.hii>
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
 /** if statment 
 *main -his program will assign a random number to the variable n each time it is executed. 
