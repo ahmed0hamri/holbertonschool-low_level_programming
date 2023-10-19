@@ -5,7 +5,7 @@
 /**
 *main - Entry point
 *
-*a program that prints the alphabet in lowercase.
+*a program that prints the alphabet in lowercase and uppercase. 
 *
 *Return: Always (Success)
 */
@@ -18,6 +18,9 @@ for (ch = 'a'; ch <= 'z' ; ch++)
 putchar(ch);
 }
 for (ch = 'A'; ch <= 'Z' ; ch++)
+{
 putchar(ch);
-
+}
 putchar('\n');
+return (0);
+}
