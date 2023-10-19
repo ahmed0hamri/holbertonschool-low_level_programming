@@ -5,7 +5,7 @@
 /**
 *main - Entry point
 *
-*a program that prints the alphabet in lowercase.
+*a program that prints the alphabet in lowercase except e and q.
 *
 *Return: Always (Success)
 */
@@ -15,12 +15,11 @@ char ch;
 
 for (ch = 'a'; ch <= 'z' ; ch++)
 {
+if (( ch != 'e') && (ch != 'q'))
+}
+{
 putchar(ch);
 }
 putchar('\n');
-
- if alpha_letters == 'e' or alpha_letters == 'q':
-       continue
 return (0);
 }
-
