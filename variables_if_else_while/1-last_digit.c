@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 
-/*
-*main - print a sentence
+/**
+*main - Entry point
 *Description :The last digit
 *This program will assign a random number
 *to the variable n each time it is executed.
