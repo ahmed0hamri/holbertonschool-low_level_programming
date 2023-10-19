@@ -5,7 +5,7 @@
 /**
 *main - Entry point
 *
-*a program that prints the alphabet in lowercase and uppercase. 
+*a program that prints the alphabet in lowercase and uppercase.
 *
 *Return: Always (Success)
 */
