@@ -2,9 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 
-/**The last digit
-*This program will assign a random number
-*to the variable n each time it is executed.
+/*main - print a sentence
+ *Description :The last digit
+ *This program will assign a random number
+ *to the variable n each time it is executed.
 */
 int main(void)
 {
@@ -18,7 +19,7 @@ printf("Last digit of %d is %d and is greater than 5\n", n, a);
 else if (a == 0)
 printf("Last digit of %d is %d and is 0\n", n, a);
 else
-printf("Last digit od %d is %d and is less than 6 and not 0\n", n, a);
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, a);
 return (0);
 }
 
