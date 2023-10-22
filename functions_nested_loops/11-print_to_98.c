@@ -7,7 +7,7 @@
  * Return: Nothing.
  */
 
-void print_to_98(int n)
+void main(int n)
 {
 int i;
 
