@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * jack_bauer - check the code
+ * jack_bauer -check the code
  *
  * Return: Always 0.
  */
