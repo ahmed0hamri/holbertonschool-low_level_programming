@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * * _puts - check the code
+ * _puts - check the code
  * @str: pointer
  * Return: Always 0.
  */
-void _puts(char *str);<
+void _puts(char *str)
 {
 
 	for (; *str != '\0'; str++)
