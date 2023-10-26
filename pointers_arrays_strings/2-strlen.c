@@ -1,13 +1,12 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <string.h>
 /**
- * main - check the code
- *
+ * _strlen - check the code
+ * @s: pointer
  * Return: Always 0.
  */
-int _strlen(char *s);{
-	char Chaine[]="bonjour";
-	int length=strlen(Chaine);
-	printf("the lenght of the string = %d",length);
-	return 0;}
+int _strlen(char *s)
+{
+	return (strlen(s));
+}
