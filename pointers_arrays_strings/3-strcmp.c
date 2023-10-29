@@ -1,26 +1,23 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 /**
- * _strchr - check the code
- * Description: locate a character in a string
- * @s : string to be executed
- * @c : charachter to search for
- * Return: char*
+ * _strcmp - check the code
+ * Description: compare two strings
+ * @s1 : pointer to string1
+ * @s2 : pointer to string2
+ * Return: int
  */
-char *_strchr(char *s, char c)
+int _strcmp(char *s1, char *s2)
 {
-	int l, i = 0;
+	int res = 0;
 
-	l = strlen(s);
-	while (i < l + 1)
+	while (*s1 != '\0' && *s2 != '\0' && res == 0)
 	{
-		if (s[i] == c)
-		{
-			s = s + i;
-			break;
-		}
-		i++;
+		res = *s1 - *s2;
+		s1++;
+		s2++;
 	}
-	if (*s != c)
-		return (NULL);
-	return (s);
+	return (res);
 }
