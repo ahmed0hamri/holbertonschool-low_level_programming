@@ -8,6 +8,13 @@
  */
 void print_rev(char *s)
 {
-	char str[5];
-	printf (" \n Enter a string to be reversed: ");
+	int i, n;
+
+	n = strlen(s);
+
+	for (i = 0; i < n; i++)
+	{
+		_putchar(s[n - 1 - i]);
+	}
+	_putchar('\n');
 }
