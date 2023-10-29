@@ -1,26 +1,25 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 /**
- * _strchr - check the code
- * Description: locate a character in a string
- * @s : string to be executed
- * @c : charachter to search for
+ * _strncpy - check the code
+ * Description: copy @n number of array to another
+ * @dest : pointer to destination array
+ * @src : pointer to be copied
+ * @n : int
  * Return: char*
  */
-char *_strchr(char *s, char c)
+char *_strncpy(char *dest, char *src, int n)
 {
-	int l, i = 0;
+	int i = 0;
 
-	l = strlen(s);
-	while (i < l + 1)
+	for (i = 0; i < n && *(src + i) != '\0'; i++)
+		*(dest + i) = *(src + i);
+	while (i < n)
 	{
-		if (s[i] == c)
-		{
-			s = s + i;
-			break;
-		}
+		*(dest + i) = '\0';
 		i++;
 	}
-	if (*s != c)
-		return (NULL);
-	return (s);
+	return (dest);
 }
