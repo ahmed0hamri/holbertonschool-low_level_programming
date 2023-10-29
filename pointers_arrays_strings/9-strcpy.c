@@ -2,22 +2,20 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * print_array - check the code
- * @a: pointer
- * @n: int
- * Return: Always 0
+ * *_strcpy - check the code
+ * @src: pointer
+ * @dest: pointer
+ * Return: Always 0.
  */
-void print_array(int *a, int n)
+char *_strcpy(char *dest, char *src)
 {
-	int i;
+	int n, i = 0;
 
-	for (i = 0; i < n; i++)
+	n = strlen(src);
+	while (i <= n)
 	{
-		printf("%d", *(a + i));
-		if (i < n - 1)
-		{
-			printf(", ");
-		}
+		*(dest + i) = *(src + i);
+		i++;
 	}
-	printf("\n");
+	return (dest);
 }
