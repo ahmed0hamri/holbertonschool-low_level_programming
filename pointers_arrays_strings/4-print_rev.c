@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdio.h>
 /**
- * main - check the code
+ * print_rev- check the code
  *
  * Return: Always 0.
  */
