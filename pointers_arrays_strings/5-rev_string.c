@@ -2,22 +2,25 @@
 #include <stdio.h>
 #include <string.h>
 /**
-* reverse_array - check the code.
-* @a: pointer
-* @n: int
-* Return: Always 0.
-*/
-void reverse_array(int *a, int n)
+ * rev_string - check the code
+ * @s: pointer
+ * Return: Always 0.
+ */
+void rev_string(char *s)
 {
-	int i, res;
+	int i, l = 0;
+	char str[1000];
 
-	res = 0;
-	i = 0;
-	for (i = 0; i < n / 2 ; i++)
+	l = strlen(s);
+	while (i < l)
 	{
-	res = a[i];
-	a[i] = a[n - i - 1];
-	a[n - i - 1] = res;
+		str[i] = *(s + l - i - 1);
+		i++;
+	}
+	i = 0;
+	while (i < l)
+	{
+		*(s + i) = str[i];
+		i++;
 	}
 }
-
