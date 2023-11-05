@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- *factorial - chech the code.
- *@n: int
- *Return: Always 0.
+ * factorial - check the code
+ * Description: count the factorial of int
+ * @n : int
+ * Return: int
  */
 int factorial(int n)
-	{
-		if (n<0)
-			return (-1);
-		else if (n == 1)
-		{
-			return (1);
-		}
-		return (n * facotrial(n-1));
-	}
+{
+	if (n > 0)
+		return (n * factorial(n - 1));
+	else if (n < 0)
+		return (-1);
+	else
+		return (1);
+}
