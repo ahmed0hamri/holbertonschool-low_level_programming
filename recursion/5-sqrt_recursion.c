@@ -1,28 +1,30 @@
 #include "main.h"
-#include <math.h>
 /**
- * is_prime_number - chech the code.
- * @n: int
- * @i: int
- * Return: Always 0 or 1.
+ * _sqrt_recursion - check the code
+ * Description: count the square root of @n
+ * @n : int
+ * Return: int
  */
-int check_prime(int n, int i);
-int is_prime_number(int n)
+int _sqrt_recursion(int n)
 {
-	return (check_prime(n, 2));
+	if (n > 0)
+		return (square(n, 1));
+	else
+		return (-1);
 }
 /**
- * check_prime - check the code.
- * @n: int
- * @i: int
- * Return: 0 or 1
+ * square - check the code
+ * Description : check if @y squared is @x
+ * @x : unsigned long
+ * @y : unsigned long
+ * Return: int
  */
-int check_prime(int n, int i)
+int square(unsigned long x, unsigned long y)
 {
-	if (i >= n && n > 1)
-		return (1);
-	else if (n % i == 0 || n <= 1)
-		return (0);
+	if (y * y == x)
+		return (y);
+	else if (y * y < x)
+		return (square(x, y + 1));
 	else
-		return (check_prime(n, i + 1));
+		return (-1);
 }
