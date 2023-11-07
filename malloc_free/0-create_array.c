@@ -7,18 +7,19 @@
  * Return: ptr.
  */
 
-char *create_array(unsigned int size, char c);
-char *p
-	n=10;
+char *create_array(unsigned int size, char c)
 {
-	if (size == NULL);
+	char *p;
+
+	if (size == NULL)
+	{
 		return NULL;
-}
-{
-	do (*p = malloc size of char *n);
-		while (p == NULL);
-}
-{
-	for (i=0, i<n, i++);
-		return (p);
+	}
+	do {
+		p = malloc(sizeof(char) * size);
+	}
+	while (p == NULL);
+	for (i=0, i<n, i++)
+		p[i]=c;	
+	return (p);
 }
