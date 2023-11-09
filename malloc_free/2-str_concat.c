@@ -6,7 +6,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-    int i;
+    unsigned int i;
     char *p;
     if (s1==NULL)
         s1="\0";
