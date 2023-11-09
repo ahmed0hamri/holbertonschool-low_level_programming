@@ -7,14 +7,16 @@
  */
 char *_strdup(char *str)
 {
-    int i;
+    int i = 0;
 
     if (str == NULL)
     {
         return (NULL);
     }
-    for (i = 0; i != '\0'; i++)
-        str[i];
+    while (str[i] != '\0')
+    {
+        i++;
+    }
     printf("%s", str);
     str = malloc(sizeof(char) * i + 1);
     return (str);
