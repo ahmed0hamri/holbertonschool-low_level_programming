@@ -1,9 +1,8 @@
 #include "main.h"
 /**
  * check the code
- *@size: number of cases
- *@c: char
- * Return: ptr.
+ * @str: pointer
+ * Return: NULL or string
  */
 char *_strdup(char *str)
 {
