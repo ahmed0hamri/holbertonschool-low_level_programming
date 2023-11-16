@@ -1,6 +1,6 @@
 #include "dog.h"
 
-if (d)
+if(d)
 {
     printf("name: %s\n", d->name ? d->name : "(nil)")
     printf("age: %f\n", d->age)
