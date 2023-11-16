@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdlib.h>
 /**
- * free_dog - whoooo let the dogs out? whoof, Whoof Whoof
+ * free_dog - free my dog he didn't do non
  * @d: struct dog *
  * Return: void
  */
