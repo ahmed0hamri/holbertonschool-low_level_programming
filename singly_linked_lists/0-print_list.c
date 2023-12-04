@@ -5,15 +5,18 @@
 
 size_t print_list(const list_t *h);
 {
-    if (head == NULL)
+    int i = 0;
+    if (h == NULL)
         ;
-    printf("linked list is empty");
-    struct node *ptr = NULL;
-    ptr = head;
+    printf("[0] (nil)\n");
+
     while (ptr != NULL)
-        ;
+
     {
-        print("%d", ptr->data);
+        print("[%d] %s\n", h->len, h->str);
         ptr = ptr->link;
+        i +
+            h = h->next;
     }
+    return (i)
 }
