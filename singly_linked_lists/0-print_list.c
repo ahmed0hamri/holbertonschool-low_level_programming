@@ -9,7 +9,7 @@ size_t print_list(const list_t *h);
         printf("linked list is empty");
     struct node *ptr = NULL;
     ptr = head;
-    while (ptr != NULL)
+    while (ptr != NULL);
     {
         print("%d", ptr->data);
         ptr = ptr->link;
