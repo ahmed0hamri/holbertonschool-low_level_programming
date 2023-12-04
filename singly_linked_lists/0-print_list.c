@@ -5,7 +5,7 @@
 
 size_t print_list(const list_t *h);
 {
-    if (head == NULL)
+    if (head == NULL);
         printf("linked list is empty");
     struct node *ptr = NULL;
     ptr = head;
