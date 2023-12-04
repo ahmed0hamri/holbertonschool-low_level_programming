@@ -3,11 +3,10 @@
 #include <stdio.h>
 #include "lists.h"
 
-size_t print_list(const list_t *h);
+size_t print_list(const list_t *h)
 {
     int i = 0;
     if (h == NULL)
-        ;
     printf("[0] (nil)\n");
 
     while (h != NULL)
@@ -15,7 +14,7 @@ size_t print_list(const list_t *h);
     {
         print("[%d] %s\n", h->len, h->str);
         ptr = ptr->link;
-        i +
+        i++
             h = h->next;
     }
     return (i)
