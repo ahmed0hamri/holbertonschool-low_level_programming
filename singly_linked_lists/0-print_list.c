@@ -4,7 +4,7 @@
 #include "lists.h"
 /**
  * print_list -print linked list
- * @h: string 
+ * @h: string
  * Return: i
  */
 size_t print_list(const list_t *h)
