@@ -9,18 +9,18 @@
  */
 size_t list_len(const list_t *h)
 {
-    int i = 0;
+	int i = 0;
 
-    if (!h)
-    {
-        return (0);
-    }
+	if (!h)
+	{
+		return (0);
+	}
 
-    while (h)
-    {
+	while (h)
+	{
 
-        h = h->next;
-        i++;
-    }
-    return (i);
+		h = h->next;
+		i++;
+	}
+	return (i);
 }
