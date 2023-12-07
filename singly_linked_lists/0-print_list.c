@@ -4,12 +4,13 @@
 #include "lists.h"
 /**
  * print_list -print linked list
- * @h: string - (malloc'ed string)
- * return: i
+ * @h: string 
+ * Return: i
  */
 size_t print_list(const list_t *h)
 {
 	int i = 0;
+
 	if (!h)
 	{
 		return (0);
