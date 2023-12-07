@@ -2,20 +2,25 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
+/**
+ * print_list -print linked list
+ * @h: string - (malloc'ed string)
+ * return: i
+ */
 size_t print_list(const list_t *h)
 {
-    int i = 0;
-    if (h == NULL)
-    printf("[0] (nil)\n");
+	int i = 0;
 
-    while (h != NULL)
-
-    {
-        printf("[%d] %s\n", h->len, h->str);
-        h = h->link;
-        i++
-            h = h->next;
-    }
-    return (i)
+	if (!h->str)
+	{
+		printf("[0] (nil)\n");
+		return (0);
+	}
+	while (h)
+	{
+		printf("[%d] %s\n", h->len, h->str);
+		h = h->next;
+		i++;
+	}
+	return (i);
 }
