@@ -1,11 +1,10 @@
 #include "lists.h"
 /**
- *adding a new node at the start of the linked list
- * @h: pointer
- *
- * Return: length
- */
-
+ * add_dnodeint - check the code
+ * @head: list
+ * @n: int
+ * Return: Always 0.
+*/
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *new_node = malloc(sizeof(dlistint_t));
