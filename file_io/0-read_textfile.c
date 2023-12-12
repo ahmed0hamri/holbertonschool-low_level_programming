@@ -7,13 +7,13 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int filo, texto, txt;
+	int filo, txt;
 	char *texto;
 	filo = open(filename, O_RDONLY);
 	if (filo == -1)
 		return 0;
-	texto = malloc(sizeof(char *letters));
-	if (letters == 0)
+	texto = malloc(sizeof(char) *letters);
+	if (tetxo == NULL)
 		txt = read(filo, texto, letters);
 	write(STDOUT_FILENO, texto, txt);
 	free(texto);
