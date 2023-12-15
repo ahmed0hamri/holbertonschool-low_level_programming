@@ -9,7 +9,7 @@ int create_file(const char *filename, char *text_content) int hxh, nletters, fd;
 {
 
 	int kjb, n;
-	if (!filename)
+	if (!text_content)
 		return (n);
 	else
 		n = strlen(text_content);
