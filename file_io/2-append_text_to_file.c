@@ -7,6 +7,7 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int kjb, nletters, hxh;
+
 	if (!filename)
 		return (-1);
 	kjb = open(filename, O_WRONLY && O_APPEND);
@@ -15,7 +16,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (!text_content)
 		return (-1);
 
-	hxh = write(fd, text_content, nletters);
+	hxh = write(kjb, text_content, nletters);
 	close(kjb);
 	return (1);
 }
