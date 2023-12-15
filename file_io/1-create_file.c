@@ -1,13 +1,15 @@
 #include "main.h"
 /**
- * append_text_to_file - a function that appends text at the end
+ /**
+ * create_file - Create a function that creates a file.
  * @filename: char
  * @text_content: text
  * Return: 0.
  */
-int create_file(const char *filename, char *text_content) 
+int create_file(const char *filename, char *text_content)
 {
 	int kjb, n;
+
 	if (!text_content)
 		n = 0;
 	else
