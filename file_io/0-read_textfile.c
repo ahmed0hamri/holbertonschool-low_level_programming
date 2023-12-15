@@ -9,10 +9,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int filo, txt;
 	char *texto;
+
 	filo = open(filename, O_RDONLY);
 	if (filo == -1)
 		return 0;
-	texto = malloc(sizeof(char) *letters);
+	texto = malloc(sizeof(char) * letters);
 	if (texto == NULL)
 		return (0);
 	txt = read(filo, texto, letters);
