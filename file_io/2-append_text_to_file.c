@@ -6,9 +6,9 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int kjb, nletters, dxd;
+	int kjb, nletters;
 
-	if (text_content == null)
+	if (text_content == NULL)
 		nletters = 0;
 	else
 		(nletters = strlen(text_content));
@@ -16,7 +16,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (kjb == -1)
 		return (-1);
 
-	dxd = write(kjb, text_content, nletters);
+	write(kjb, text_content, nletters);
 	close(kjb);
 	return (1);
 }
